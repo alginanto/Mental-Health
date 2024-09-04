@@ -7,7 +7,7 @@ class GetDailyQuotes extends UseCaseInterface {
     this.quotesRepository = quotesRepository;
   }
   async execute() {
-    const quotesData = await this.quotesRepository.GetDailyQuotes();
+    const quotesData = await this.quotesRepository.getDailyQuotes();
     return new Meditation({ text: quotesData });
   }
 }

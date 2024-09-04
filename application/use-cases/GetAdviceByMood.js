@@ -7,7 +7,7 @@ class GetAdviceByMood extends UseCaseInterface {
     this.quotesRepository = quotesRepository;
   }
   async execute(mood) {
-    const quotesData = await this.quotesRepository.GetAdviceByMood(mood);
+    const quotesData = await this.quotesRepository.getAdviceByMood(mood);
     return new Meditation({ text: quotesData });
   }
 }
