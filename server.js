@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const meditationRoutes = require("./adapters/routes/meditationRoutes");
 const songRoutes = require("./adapters/routes/songRoutes");
 
